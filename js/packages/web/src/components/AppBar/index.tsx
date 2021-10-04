@@ -63,6 +63,9 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
       <Link to={`/artists`}>
         <Button className="app-btn">Creators</Button>
       </Link>
+      <a href="https://forms.gle/AULA7Lp57S1uUs38A" target="_blank">
+      <Button className="ant-btn app-btn">Apply</Button>
+      </a>
     </div>
   );
 };
