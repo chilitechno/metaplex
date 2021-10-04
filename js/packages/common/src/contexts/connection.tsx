@@ -46,6 +46,11 @@ export const ENDPOINTS = [
     ChainId: ChainId.MainnetBeta,
   },
   {
+    name: 'mainnet-beta (Phantom)' as ENV,
+    endpoint: 'https://solana-mainnet.phantom.tech',
+    ChainId: ChainId.MainnetBeta,
+  },
+  {
     name: 'mainnet-beta (Solana)' as ENV,
     endpoint: 'https://api.mainnet-beta.solana.com',
     ChainId: ChainId.MainnetBeta,
@@ -505,7 +510,7 @@ export const getUnixTs = () => {
   return new Date().getTime() / 1000;
 };
 
-const DEFAULT_TIMEOUT = 15000;
+const DEFAULT_TIMEOUT = 600000;
 
 export async function sendSignedTransaction({
   signedTransaction,

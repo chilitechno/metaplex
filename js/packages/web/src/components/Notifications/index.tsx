@@ -495,7 +495,7 @@ export function Notifications() {
       content={content}
       trigger="click"
     >
-      <h1 className="title">M</h1>
+      <h1 className="title"><img src="/img/logo2.png" alt="SunSpots.io Logo" /></h1>
     </Popover>
   );
 
